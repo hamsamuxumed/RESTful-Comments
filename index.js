@@ -31,8 +31,8 @@ comments = [
     }
 ]
 
-app.get('/', (req, res) => {
-    res.send('Hello world oooo')
+app.get('/comments', (req, res) => {
+    res.render('comments/index', { comments })
 })
 
 
